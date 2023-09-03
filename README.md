@@ -1,6 +1,3 @@
-# Speedtest50
-
-# CS50X
 # **Speedtest50, a network speedtest**
 Video Demo: 
 
@@ -17,7 +14,7 @@ With this final project, you can easily measure your network speed, keeping trac
 
 ## **That was the gist of the app. Now onto the specifics and technicalities.**
 
-Starting with the what was needed for this bot:
+Starting with the what was needed for this web app:
 
     - speedtest-cli library 
     - werkzeug.security library for hashing
