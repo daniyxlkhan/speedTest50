@@ -43,7 +43,17 @@ You can get your network speed on the click of a button.
 
 Using decorators for routes.
 
-```
+Consists of the following files and folders:
+
+    - static (images and css files)
+    - templates (html files)
+
+    - app.py (main python flask app)
+    - db.txt (my SQL queries for creating the database)
+    - helper.py (contains some useful functions used in app.py)
+    - requirements.txt (made using pip freeze > requirements.txt)
+    - speedtest.db (which is the database for history)
+
 
 <br>
 Now, the speedtest is complete and all that is needed is the option to deploy it. I chose to deploy it and make it useful to the public. 
