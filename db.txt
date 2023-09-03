@@ -1,0 +1,20 @@
+""" SQL Query Logs """
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    name TEXT NOT NULL,
+    hash_pass TEXT NOT NULL
+)
+
+CREATE TABLE history (
+    test_number INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT,
+    user_id INTEGER,
+    ip_address VARCHAR(39),
+    download_speed REAL,
+    upload_speed REAL,
+    ping REAL,
+    latency REAL,
+    sponsor TEXT,
+    FOREIGN KEY(user_id) REFERENCES users(id)
+)

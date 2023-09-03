@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <form action="/test" method="get">
+        <div class="spinner-grow text-success" role="status" style="width: 3rem; height: 3rem">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <h1> SpeedTest50 </h1>
+        <p> Click the button below to start <br>the network speedtest </p>
+        <button type="submit">Test</button>
+        <div class="fixed-bottom footer-custom">
+            <p class="footer-para"><small>
+                While this test provides valuable insights into your network speed, it's important to note that
+                the methods employed here are not as complex as other commercial speedtest.
+                As such, the results may not align perfectly with those obtained through more sophisticated commercial speedtests.
+            </small></p>
+        </div>
+    </form>
+
+{% endblock %}

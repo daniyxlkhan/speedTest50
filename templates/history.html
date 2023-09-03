@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<div class="table-responsive">
+<table class="table table-color table-striped-columns">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Download Speed</th>
+            <th>Upload Speed</th>
+            <th>Ping</th>
+            <th>Latency</th>
+            <th>Sponsor</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in results %}
+        <tr>
+            <td>{{ row["test_number"] }}</td>
+            <td>{{ row["download_speed"] }}</td>
+            <td>{{ row["upload_speed"] }}</td>
+            <td>{{ row["ping"] }}</td>
+            <td>{{ row["latency"] }}</td>
+            <td>{{ row["sponsor"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}
