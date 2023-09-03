@@ -1,4 +1,4 @@
-# Speedtest50 - Network Speed Test
+#Speedtest50 - Network Speed Test
 
 [Video Demo](https://youtu.be/pCiRFMbQ8D8)
 
@@ -9,7 +9,7 @@ Speedtest50 is a network speed measurement tool created as the final project for
 Speedtest50 allows you to effortlessly measure your network speed and monitor your network's performance over time. By logging in, you unlock the ability to track and compare your network's speed, ensuring you always stay connected at optimal speeds.
 
 ## Technical Details
-To bring this web app to life, we relied on essential components:
+To bring this web app to life, I relied on essential components:
 
 - **speedtest-cli library**: For network speed testing.
 - **werkzeug.security library**: To handle password hashing securely.
@@ -50,12 +50,12 @@ Speedtest50's project structure comprises the following components:
 Your Speedtest50 is ready for deployment and public use.
 
 ## Learning Journey
-During this project, you acquired valuable skills:
+During this project, I acquired valuable skills:
 
-- Deepened your Python knowledge.
+- Deepened my Python knowledge.
 - Learned to work with diverse libraries.
 - Mastered GitHub Desktop for project management.
 - Gained proficiency in SQL.
 - Developed database management skills.
 
-Your journey with CS50's Introduction to Computer Science has been transformative, teaching you not only coding but also the ability to self-learn—a fundamental skill in the world of programming.
+My journey with CS50's Introduction to Computer Science has been transformative, teaching me not only coding but also the ability to self-learn—a fundamental skill in the world of programming.
