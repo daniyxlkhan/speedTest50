@@ -1,71 +1,61 @@
-# **Speedtest50, a network speedtest**
-Video Demo: https://youtu.be/pCiRFMbQ8D8
+# Speedtest50 - Network Speed Test
 
-# **Description**:
-This was created specifically as a final project for [CS50’s Introduction to Computer Science](https://cs50.harvard.edu/x/2022/). 
+[Video Demo](https://youtu.be/pCiRFMbQ8D8)
 
-This project consists is a speedtest that uses libraries like speedtest, flask, cs50, flask session. 
-<br></br>
+## Description
+Speedtest50 is a network speed measurement tool created as the final project for [CS50’s Introduction to Computer Science](https://cs50.harvard.edu/x/2022/). It harnesses the power of various libraries, including speedtest, flask, cs50, and flask session.
 
-## **A practical use**
+### Practical Use
+Speedtest50 allows you to effortlessly measure your network speed and monitor your network's performance over time. By logging in, you unlock the ability to track and compare your network's speed, ensuring you always stay connected at optimal speeds.
 
-With this final project, you can easily measure your network speed, keeping track of your network's performance over time. By simply logging in, you gain access to a valuable tool that allows you to monitor and compare your network's speed, ensuring you always stay connected at optimal speeds.
-<br></br>
+## Technical Details
+To bring this web app to life, we relied on essential components:
 
-## **That was the gist of the app. Now onto the specifics and technicalities.**
+- **speedtest-cli library**: For network speed testing.
+- **werkzeug.security library**: To handle password hashing securely.
+- **Flask framework**: To create a robust Python web application.
 
-Starting with the what was needed for this web app:
+## Core Features
+Speedtest50 offers three main functionalities:
 
-    - speedtest-cli library 
-    - werkzeug.security library for hashing
-    - Flask framework to work with python
+- **Test**: Get your network speed with a single click.
+- **Register**: Create a new account to save your speed test history.
+- **Login**: Access your account to view your historical network speeds.
 
+### How It Works
+Here's a breakdown of how Speedtest50 operates:
 
-Now, onto the code.
+- It utilizes the speedtest-cli library to identify the most suitable server for your speed test.
+- The application gathers key metrics, including download speed, upload speed, ping latency, and sponsor information. Speeds are converted from bits per second (bps) to megabits per second (Mbps) for better comprehension.
+- When users are logged in, their results are stored in the database for future reference.
 
-## **The gist of the web app**
+### Project Structure
+Speedtest50's project structure comprises the following components:
 
-    -Test- Get your network speed
-    -Register - Register a new account to keep track of your network speeds
-    -Login - Login to your account
-    
+- **static**: This directory contains images and CSS files used for styling and enhancing the user interface.
 
+- **templates**: Here, you'll find HTML files that define the structure and layout of the web pages, dynamically rendering your network speed test results.
 
-This Speedtest works as follows:
+- **app.py**: The heart of the application, where routing, data retrieval, and result presentation are managed. Decorators for routes ensure smooth navigation.
 
-You can get your network speed on the click of a button.
+- **db.txt**: Contains SQL queries responsible for establishing the database structure to store historical speed test results.
 
-- Uses the speedtest-cli to get the optimal server.
+- **helper.py**: This file hosts essential functions used across app.py to optimize various tasks.
 
-- Gets the download speed, upload speed, ping and sponsor. (Converts speed from bps to Mbps)
-  
-- Saves the results for history if user is logged in
+- **requirements.txt**: A list of Python libraries and dependencies needed for your project. Generate it with the `pip freeze > requirements.txt` command.
 
-Using decorators for routes.
+- **speedtest.db**: An SQLite database that stores historical speed test results for registered users.
 
-Consists of the following files and folders:
+## Deployment
+Your Speedtest50 is ready for deployment and public use.
 
-    - static (images and css files)
-    - templates (html files)
+## Learning Journey
+During this project, you acquired valuable skills:
 
-    - app.py (main python flask app)
-    - db.txt (my SQL queries for creating the database)
-    - helper.py (contains some useful functions used in app.py)
-    - requirements.txt (made using pip freeze > requirements.txt)
-    - speedtest.db (which is the database for history)
+- Deepened your Python knowledge.
+- Learned to work with diverse libraries.
+- Mastered GitHub Desktop for project management.
+- Gained proficiency in SQL.
+- Developed database management skills.
 
-
-<br>
-Now, the speedtest is complete and all that is needed is the option to deploy it. I chose to deploy it and make it useful to the public. 
-<br></br>
-
-I learned a lot in the process of working with this web application, specifically:
-    
-- Deepened my knowledge of python
-- Learned how to work with various libraries 
-- Learned how to create and manage a project through GitHub Desktop
-- Learned SQL
-- Learned how to handle a database
-
-
-And with this, I got to thank all of CS50's staff for their amazing course, which was an amazing introduction that helped me progress and fundamentally, it taught me to teach myself how to code.
+Your journey with CS50's Introduction to Computer Science has been transformative, teaching you not only coding but also the ability to self-learn—a fundamental skill in the world of programming.
