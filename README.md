@@ -46,8 +46,6 @@ Speedtest50's project structure comprises the following components:
 
 - **speedtest.db**: An SQLite database that stores historical speed test results for registered users.
 
-## Deployment
-Your Speedtest50 is ready for deployment and public use.
 
 ## Learning Journey
 During this project, I acquired valuable skills:
@@ -58,4 +56,4 @@ During this project, I acquired valuable skills:
 - Gained proficiency in SQL.
 - Developed database management skills.
 
-My journey with CS50's Introduction to Computer Science has been transformative, teaching me not only coding but also the ability to self-learn—a fundamental skill in the world of programming.
+My journey with CS50's Introduction to Computer Science has been transformative, teaching me not only coding but also the ability to self-learn a fundamental skill in the world of programming.
